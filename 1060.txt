@@ -1,0 +1,30 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+     int j =0,k=0;
+     int a[6];
+     for(int i =0; i<6;i++)
+     {
+         cin>>a[i];
+         
+     }
+     for (int i = 0;i<6;i++)
+     {
+         if(a[i]>0)
+         {
+             j++;
+         }
+     }
+     cout<<j<<" valores positivos"<<endl;
+     
+ 
+    return 0;
+}

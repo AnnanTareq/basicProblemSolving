@@ -1,0 +1,45 @@
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    float N1,N2,N3,N4,N5;
+    cin>>N1>>N2>>N3>>N4;
+    
+    float P = (N1*2+N2*3+N3*4+N4*1)/10;
+    
+    cout<<"Media: "<<fixed<<setprecision(1)<<P<<endl;
+    if(P>=7.0)
+    {
+        cout<<"Aluno aprovado."<<endl;
+    }
+    else if(P<5.0)
+    {
+        cout<<"Aluno reprovado."<<endl;
+    }
+    else if(P>=5.0 && P<=6.9)
+    {
+        cout<<"Aluno em exame."<<endl;
+        cin>>N5;
+        cout<<"Nota do exame: "<<fixed<<setprecision(1)<<N5<<endl;;
+        float Q = (P+N5)/2;
+        if(Q>=5.0)
+        {
+        cout<<"Aluno aprovado."<<endl;
+        }
+        else if(Q<=4.9 )
+        {
+            cout<<"Aluno reprovado."<<endl;
+        }
+        cout<<"Media final: "<<fixed<<setprecision(1)<<Q<<endl;
+    }
+    
+    
+    return 0;
+}

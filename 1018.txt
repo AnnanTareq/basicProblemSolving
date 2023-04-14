@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+
+    int N;
+    cin>>N;
+
+
+
+    if(0<N && N<1000000)
+    {
+        cout<<N<<endl;
+        int A = N/100;
+        cout<<A<<" nota(s) de R$ 100,00"<<endl;
+        int B = N%100;
+        int C = B/50;
+        cout<<C<<" nota(s) de R$ 50,00"<<endl;
+        int D = B%50;
+        int E = D/20;
+        cout<<E<<" nota(s) de R$ 20,00"<<endl;
+        int F = D%20;
+        int G = F/10;
+        cout<<G<<" nota(s) de R$ 10,00"<<endl;
+        int H = F%10;
+        int I = H/5;
+        cout<<I<<" nota(s) de R$ 5,00"<<endl;
+        int J = H%5;
+        int K = J/2;
+        cout<<K<<" nota(s) de R$ 2,00"<<endl;
+        int L = J%2;
+        int M = L/1;
+        cout<<M<<" nota(s) de R$ 1,00"<<endl;
+    }
+
+    return 0;
+}

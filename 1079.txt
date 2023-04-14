@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    int a;
+    cin>>a;
+    
+    int i =0;
+    while(i<a)
+    {
+        float e,f,g;
+        cin>>e>>f>>g;
+        
+        float h = (e*2+f*3+g*5)/10;
+        
+        cout<<fixed<<setprecision(1)<<h<<endl;
+        
+        i++;
+    }
+    return 0;
+}

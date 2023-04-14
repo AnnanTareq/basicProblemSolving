@@ -1,0 +1,46 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    int a[5],j=0,k=0,l=0,m=0;
+    
+    for(int i =0; i<5;i++)
+    {
+        cin>>a[i];
+        
+    }
+    
+    for(int i = 0;i<5;i++)
+    {
+        if(a[i]%2==0)
+        {
+            j++;
+        }
+        if(a[i]%2==1)
+        {
+            k++;
+        }
+        if(a[i]>0)
+        {
+            l++;
+        }
+        if(a[i]<0)
+        {
+            m++;
+        }
+    }
+    cout<<j<<" valor(es) par(es)"<<endl;
+    cout<<k<<" valor(es) impar(es)"<<endl;
+    cout<<l<<" valor(es) positivo(s)"<<endl;
+    cout<<m<<" valor(es) negativo(s)"<<endl;
+    
+    
+    return 0;
+}

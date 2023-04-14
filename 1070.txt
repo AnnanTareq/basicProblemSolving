@@ -1,0 +1,25 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    int x;
+    cin>>x;
+    int p =6;
+    for(int i = x; i<x+(p*2);i++)
+    {
+        int b = i%2;
+        if(b==1)
+        {
+            cout<<i<<endl;
+        }
+        
+    }
+    return 0;
+}

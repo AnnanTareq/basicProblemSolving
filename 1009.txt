@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+     
+     string a;
+     cin>>a;
+     double b,c,d;
+     cin>>b>>c;
+     
+     
+     d = b +(c*15)/100;
+     cout<<"TOTAL = R$ "<<fixed<<setprecision(2)<<d<<endl;
+     
+ 
+    return 0;
+}

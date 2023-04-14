@@ -1,0 +1,30 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    int N,k;
+    cin>>N;
+    
+    
+        if(N>5 && N<2000)
+        {
+            for(int j = 1; j<=N; j++)
+            {
+                if(j%2==0)
+                {
+                    k = j;
+                    cout<<k<<"^2 = "<<k * k<<endl;
+                }
+                
+            }
+        }
+    
+    return 0;
+}

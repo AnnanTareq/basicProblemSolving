@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double N;
+    cin>>N;
+    int input,C,A,B;
+
+
+    if(0<=N && N<=1000000.00)
+    {
+        input = N;
+        N = N*100;
+        C = N;
+
+    cout<<"NOTAS:"<<endl;
+    cout<<input/100<<" nota(s) de R$ 100.00"<<endl;
+    A = input%100;
+    cout<<A/50<<" nota(s) de R$ 50.00"<<endl;
+    A = A%50;
+    cout<<A/20<<" nota(s) de R$ 20.00"<<endl;
+    A = A%20;
+    cout<<A/10<<" nota(s) de R$ 10.00"<<endl;
+    A = A%10;
+    cout<<A/5<<" nota(s) de R$ 5.00"<<endl;
+    A = A%5;
+    cout<<A/2<<" nota(s) de R$ 2.00"<<endl;
+    A = A%2;
+    
+    cout<<"MOEDAS:"<<endl;
+    cout<<A/1<<" moeda(s) de R$ 1.00"<<endl;
+
+    C = C%100;
+    
+    cout<<C/50<<" moeda(s) de R$ 0.50"<<endl;
+    B = C%50;
+    cout<<B/25<<" moeda(s) de R$ 0.25"<<endl;
+    B = B%25;
+    cout<<B/10<<" moeda(s) de R$ 0.10"<<endl;
+    B = B%10;
+    cout<<B/5<<" moeda(s) de R$ 0.05"<<endl;
+    B = B%5;
+    cout<<B/1<<" moeda(s) de R$ 0.01"<<endl;
+    B = B%1;
+    }
+
+
+
+}

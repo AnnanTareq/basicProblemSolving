@@ -1,0 +1,31 @@
+#include <iostream>
+#define k 100
+using namespace std;
+ 
+int main() {
+ 
+    
+    int a[k];
+    for(int i =1;i<=k;i++)
+    {
+        cin>>a[i];
+    }
+    
+    
+    int max = a[1],q;
+    
+    for(int i =1; i<=k;i++)
+    {
+       
+        if(a[i]>max)
+        {
+            max = a[i];
+            q=i;
+            
+        }
+    }
+    cout<<max<<endl;
+    cout<<q<<endl;
+    
+    return 0;
+}

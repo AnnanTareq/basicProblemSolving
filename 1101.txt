@@ -1,0 +1,49 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    
+    int m,n;
+    
+    
+    while(cin>>m>>n)
+    {
+        
+        int sum =0;
+        
+        if(m==0 || n==0 || m<0 || n<0)
+        {
+            break;
+        }
+        
+        else if(m>n)
+        {
+            for(int i = n; i<=m; i++)
+            {
+                sum +=i;
+                cout<<i<<" ";
+            }
+            cout<<"Sum="<<sum<<endl;
+        }
+        else if(m<n)
+        {
+            for(int i =m; i<=n;i++)
+            {
+                cout<<i<<" ";
+                sum +=i;
+            }
+            cout<<"Sum="<<sum<<endl;
+        }
+    }
+    
+    
+    
+    return 0;
+}

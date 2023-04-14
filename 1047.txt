@@ -1,0 +1,88 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+    
+    if(a==c && b == d)
+    {
+        cout<<"O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)"<<endl;
+    }
+    
+    if(c>a)
+    {
+        int i = c-a;
+        if(d>b)
+        {
+            int j = d -b;
+            cout<<"O JOGO DUROU "<<i<<" HORA(S) E "<<j<<" MINUTO(S)"<<endl;
+        }
+        else if(d<b)
+        {
+            int l = 60-b+d;
+            i--;
+            cout<<"O JOGO DUROU "<<i<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+        }
+        else if(d==b)
+        {
+            int l = d-b;
+            cout<<"O JOGO DUROU "<<i<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+        }
+    }
+    else if(c<a)
+    {
+        int k = 24 - a+c;
+        if(b<d)
+        {
+            int l = d-b;
+            cout<<"O JOGO DUROU "<<k<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+        }
+        else if(b>d)
+        {
+            k--;
+            int l = 60-b+d;
+            cout<<"O JOGO DUROU "<<k<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+        }
+        else if(b==d)
+        {
+            int l = b -d;
+            cout<<"O JOGO DUROU "<<k<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+            
+        }
+    }
+    else if(a == c)
+    {
+        int k = c-a;//here is problem
+        if(b<d)
+        {
+            int l = d-b;
+            cout<<"O JOGO DUROU "<<k<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+        }
+        else if(b>d)
+        {
+            int l = 60-b+d;
+            int m = 24-a+c; 
+            m--;
+            cout<<"O JOGO DUROU "<<m<<" HORA(S) E "<<l<<" MINUTO(S)"<<endl;
+        }
+    }
+    else if(b == d)
+    {
+        int m = b-d;
+        if(a>c)
+        {
+            int n = 24-a+c;
+            cout<<"O JOGO DUROU "<<m<<" HORA(S) E "<<n<<" MINUTO(S)"<<endl;
+        }
+        else if(a<c)
+        {
+            int o= c-a;
+            cout<<"O JOGO DUROU "<<m<<" HORA(S) E "<<o<<" MINUTO(S)"<<endl;
+        }
+        
+    }    
+    return 0;
+}

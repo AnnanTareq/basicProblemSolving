@@ -1,0 +1,90 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    double a,b,c,t;
+    cin>>a>>b>>c;
+    
+    if(a>0 && b>0 && c>0)
+    {
+        
+           // float t;
+            if(a<b)
+            {
+                t =a;
+                //cout<<"t = "<<t<<endl;
+                a = b;
+                //cout<<"a = "<<a<<endl;
+                b = t;
+                // cout<<"b = "<<b<<endl;
+                // cout<<endl;
+            }
+            if(b<c)
+            {
+                t = b;
+                // cout<<" t = "<<t<<endl;
+                b =c;
+                // cout<<" b = "<<b<<endl;
+                c = t;
+                // cout<<"c = "<<c<<endl;
+                // cout<<endl;
+                
+            }
+            if(a<b)
+            {
+                t = a;
+                //cout<<"t = "<<t<<endl;
+                a = b;
+                //cout<<" a = "<<a<<endl;
+                b = t;
+                //cout<<"b = "<<b<<endl;
+                //cout<<endl;
+            }
+            
+           
+            if(a>=b+c)
+            {
+                cout<<"NAO FORMA TRIANGULO"<<endl;
+            }
+            else if(a*a == b*b + c*c)
+            {
+                cout<<"TRIANGULO RETANGULO"<<endl;
+            }
+            else if(a*a> b*b + c*c)
+            {
+                cout<<"TRIANGULO OBTUSANGULO"<<endl;
+            }
+            else if(a*a < b*b + c*c)
+            {
+                cout<<"TRIANGULO ACUTANGULO"<<endl;
+            }
+      
+        
+        
+        if(a == b && b == c && a ==c)
+        {
+            cout<<"TRIANGULO EQUILATERO"<<endl;
+        }
+        if(a == b && b != c)
+        {
+            cout<<"TRIANGULO ISOSCELES"<<endl;
+        }
+        else if(b == c && b != a)
+        {
+            cout<<"TRIANGULO ISOSCELES"<<endl;
+        }
+        else if(a == c && a!=b)
+        {
+            cout<<"TRIANGULO ISOSCELES"<<endl;
+        }
+        
+    }
+    return 0;
+}

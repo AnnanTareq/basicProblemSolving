@@ -1,0 +1,55 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+     
+     int n;
+     cin>>n;
+     
+     int i =0;
+     while(i<n)
+     {
+         int x;
+         cin>>x;
+         
+         if(x==0)
+         {
+             cout<<"NULL"<<endl;
+         }
+         
+         else if(x%2==0)
+         {
+             if(x<0)
+             {
+                 cout<<"EVEN NEGATIVE"<<endl;
+             }
+             else 
+             {
+                 cout<<"EVEN POSITIVE"<<endl;
+             }
+         }
+         
+         else 
+         {
+             if(x>0)
+             {
+                 cout<<"ODD POSITIVE"<<endl;
+             }
+             else if(x<0)
+             {
+                 cout<<"ODD NEGATIVE"<<endl;
+             }
+         }
+         
+         i++;
+     }
+ 
+    return 0;
+}

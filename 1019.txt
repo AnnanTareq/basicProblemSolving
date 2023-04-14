@@ -1,0 +1,32 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+     int N,h,mnt2;
+     cin>>N;
+     
+     int mnt = N/60;
+     int sec = N%60;
+     if(mnt>=60)
+     {
+          h = mnt/60;
+          mnt2 = mnt%60;
+          
+          cout<<h<<":"<<mnt2<<":"<<sec<<endl;
+     }
+     else
+     {
+         cout<<h<<":"<<mnt<<":"<<sec<<endl;
+     }
+
+     
+     
+    return 0;
+}

@@ -1,0 +1,66 @@
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    
+    int n;
+    cin>>n;
+    
+    
+    int amount[n],am=0,x=0,y=0,z=0;
+    char a[n];
+    
+   for(int i = 0;i<n;i++)
+   {
+       cin>>amount[i]>>a[i];
+   }
+   
+   for(int i =0;i<n;i++)
+   {
+       
+       am +=amount[i];
+   }
+   
+   cout<<"Total: "<<am<<" cobaias"<<endl;
+   
+   
+   for(int i =0; i<n;i++)
+   {
+        if(a[i]=='C')
+        {
+            amount[i];
+            x +=amount[i];
+        }
+        else if(a[i]=='R')
+        {
+            y +=amount[i];
+        }
+        else if(a[i]=='S')
+        {
+            z += amount[i];
+        }
+   }
+   cout<<"Total de coelhos: "<<x<<endl;
+   cout<<"Total de ratos: "<<y<<endl;
+   cout<<"Total de sapos: "<<z<<endl;
+   
+   
+   
+   float p = (x*100.00)/am;
+   float q =(y*100.00)/am;
+   float r = (z*100.00)/am;
+   
+   
+   cout<<fixed<<setprecision(2)<<"Percentual de coelhos: "<<p<<" %"<<endl;
+   cout<<fixed<<setprecision(2)<<"Percentual de ratos: "<<q<<" %"<<endl;
+   cout<<fixed<<setprecision(2)<<"Percentual de sapos: "<<r<<" %"<<endl;
+   
+    return 0;
+}

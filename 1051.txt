@@ -1,0 +1,66 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+ 
+int main() {
+ 
+    float a;
+    cin>>a;
+    
+    if(a>=0.00 && a<=2000.00)
+    {
+        cout<<"Isento"<<endl;
+    }
+    else if(a>2000.00 && a<=3000.00)
+    {
+        float c = a-2000;
+        float b = (c*8)/100;
+        cout<<"R$ "<<fixed<<setprecision(2)<<b<<endl;
+    }
+    else if(a>3000.00 && a<=4500.00)
+    {
+        
+       float e,f;
+       float b = a-3000;
+       float c = (b*18)/100;
+       
+       float d = a-2000;
+       if(d>1000)
+       {
+           e = d-b;
+           f = (e*8)/100;
+       }
+       
+       float g = c+f;
+        
+        cout<<"R$ "<<fixed<<setprecision(2)<<g<<endl;
+    }
+    else if(a>4500.00)
+    {
+        
+        float b,c,d,e,f,g,h,i,j;
+        
+        b = a - 4500;
+        c = (b*28)/100;
+        
+        d = a-3000;
+        if(a>1500)
+        {
+            e = d-b;
+            f = (e*18)/100;
+        }
+        g = a-2000;
+        if(g>2000)
+        {
+            h = g-d;
+            i = (h*8)/100;
+        }
+        
+        j = i+f+c;
+        cout<<"R$ "<<fixed<<setprecision(2)<<j<<endl;
+    }
+ 
+ 
+    return 0;
+}

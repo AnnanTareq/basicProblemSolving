@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main() {
+ 
+    /**
+     * Escreva a sua solução aqui
+     * Code your solution here
+     * Escriba su solución aquí
+     */
+    float a,b,c;
+    cin>>a>>b>>c;
+    
+    if(a<(float)(b+c) && b< (float)(a+c) && c < (float)(b+c))
+    {
+     float perimeter = a+b+c;
+     cout<<"Perimetro = "<<fixed<<setprecision(1)<<perimeter<<endl;
+    }
+    else 
+    {
+        float area = 0.5 *(a+b)*c;
+        cout<<"Area = "<<fixed<<setprecision(1)<<area<<endl;
+    }
+    
+    return 0;
+}
